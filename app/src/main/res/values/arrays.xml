@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="video_Resolution_Ratio">
+        <item>标清</item>
+        <item>高清</item>
+        <item>超清</item>
+    </string-array>
+    <string-array name="video_Aspect_Ratio">
+        <item>自动</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>全屏</item>
+    </string-array>
+    <string-array name="video_Codec_Method">
+        <item>软解</item>
+        <item>硬解</item>
+    </string-array>
+</resources>

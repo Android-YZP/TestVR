@@ -1,3 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TestVR</string>
+
+    <string name="app_name">SnailVRPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Exit">Exit</string>
+    <string name="Open_file">Open File</string>
+    <string name="Open_url">Open URL</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About</string>
+    <string name="select_fov">Select fov</string>
+    <string name="select_fov_subtitle">(field of view)</string>
+    <string name="angle_60">60°</string>
+    <string name="angle_80">80°</string>
+    <string name="angle_90">90°</string>
+    <string name="angle_130">130°</string>
+    <string name="best_angel_des">The best viewing experience</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+
+
 </resources>
