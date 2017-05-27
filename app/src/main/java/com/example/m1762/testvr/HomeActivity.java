@@ -41,17 +41,10 @@ public class HomeActivity extends AppCompatActivity {
         mLivePusher.setBeautyFilter(7, 3);//配置美颜
 
         //用图片来设置滤镜
-        Bitmap bmp = null;
-        bmp = decodeResource(getResources(), R.drawable.huaijiu);
-        if (mLivePusher != null) {
-            mLivePusher.setFilter(bmp);
-        }
-
-
-
-
-
+//        Bitmap bmp = null;
+//        bmp = decodeResource(getResources(), R.drawable.qingxin);
+//        if (mLivePusher != null) {
+//            mLivePusher.setFilter(bmp);
+//        }
     }
-
-
 }
