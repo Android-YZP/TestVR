@@ -32,6 +32,7 @@ public class BlankFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_blank, container, false);
         textView = (TextView) view.findViewById(R.id.text33);
+        TextView textView2 = (TextView) view.findViewById(R.id.text44);
         String data = getArguments().getString("Data");
         textView.setText(data);
         textView.setOnClickListener(new View.OnClickListener() {
@@ -39,10 +40,17 @@ public class BlankFragment extends Fragment {
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"进入播放器",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getContext(),PlayActivity.class);
-                i.putExtra(Definition.KEY_PLAY_URL, "http://123.206.89.244/ty/10752.mp4");
-                SPUtils.put(getContext(),Definition.HISTORY_URL,"http://123.206.89.244/ty/10752.mp4");
+                i.putExtra(Definition.KEY_PLAY_URL, "rtmp://9250.liveplay.myqcloud.com/live/9250_1111112111");
+                SPUtils.put(getContext(),Definition.HISTORY_URL,"rtmp://9250.liveplay.myqcloud.com/live/9250_1111112111");
                 getContext().startActivity(i);
 
+            }
+        });
+        textView2.setText("我要直播ghtrhthtrhdgfdgregfdgfdgregergerg");
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"直播了......",Toast.LENGTH_SHORT).show();
             }
         });
         return view;

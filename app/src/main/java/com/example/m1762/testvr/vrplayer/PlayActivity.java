@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
@@ -166,6 +167,13 @@ public class PlayActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+		//直播界面是竖屏显示,//播放器界面是横屏显示
+//		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);//横屏
+//
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//竖屏
+
+
 
 		setContentView(R.layout.activity_play);
 		

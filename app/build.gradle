@@ -8,7 +8,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        ndk { abiFilters 'armeabi-v7a'}//完美填坑CUP不同手机的崩溃问题
+        ndk { abiFilters 'armeabi-v7a' }//完美填坑CUP不同手机的崩溃问题
     }
     sourceSets {
         main {
@@ -35,4 +35,7 @@ android {
         compile 'com.google.vr:sdk-panowidget:1.40.0'
         compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
     }
+}
+dependencies {
+    compile files('libs/okhttp-3.2.0.jar')
 }
